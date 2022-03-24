@@ -2,6 +2,7 @@ docker build -t anguixa/multi-client:latest -t anguixa/multi-client:$SHA -f ./cl
 docker build -t anguixa/multi-server:latest -t anguixa/multi-server:$SHA -f ./server/Dockerfile ./server
 docker build -t anguixa/multi-worker:latest -t anguixa/multi-worker:$SHA -f ./worker/Dockerfile ./worker
 
+
 docker push anguixa/multi-client:latest
 docker push anguixa/multi-server:latest
 docker push anguixa/multi-worker:latest
